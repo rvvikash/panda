@@ -5,3 +5,7 @@ b) Identify the top 5 best-selling products based on total quantity sold.
 c) Determine the average revenue per day for each month.
 d) Visualize the monthly trend of total revenue over the year.Hint: 
 You may need to use pandas for data manipulation and matplotlib or seaborn for data visualization.
+
+
+
+The nlargest() function in pandas is used to get the top n largest values from a Series or DataFrame. 
