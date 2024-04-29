@@ -34,3 +34,24 @@ second_max_salaries = top_2_salaries.groupby(level=0).nth(-1)
 
 print(second_max_salaries)
 
+
+top_6_salaries
+import pandas as pd
+
+# Sample data
+data = {'Name': ['John', 'Emma', 'Peter', 'Sophia', 'Liam', 'Alex', 'Emily', 'Daniel'],
+        'Department': ['HR', 'IT', 'IT', 'HR', 'Finance', 'Finance', 'HR', 'IT'],
+        'Salary': [5000, 6000, 4500, 7000, 5500, 6200, 4800, 5300]}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Group by department and get top 6 salaries in each group
+top_6_salaries = df.groupby('Department')['Salary'].nlargest(6)
+
+# Get the 6th maximum salary from each group
+sixth_max_salaries = top_6_salaries.groupby(level=0).nth(5)
+
+print(sixth_max_salaries)
+
+
