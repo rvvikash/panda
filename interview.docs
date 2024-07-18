@@ -7,5 +7,9 @@ d) Visualize the monthly trend of total revenue over the year.Hint:
 You may need to use pandas for data manipulation and matplotlib or seaborn for data visualization.
 
 
+df['lastname'] = df['lastname'].str.strip('123._/')
+
+
+
 
 The nlargest() function in pandas is used to get the top n largest values from a Series or DataFrame. 
